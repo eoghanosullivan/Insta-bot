@@ -8,6 +8,7 @@ tags = ["100daysofcode", "react.js", "nodejs", "python",
 print("Running")
 
 def dailyLikes():
+  print("Commenting & Liking")
   session = InstaPy(username=InstaUsername,
                     password=InstaPassword, headless_browser=True)
   with smart_run(session):
