@@ -5,6 +5,7 @@ import time
 
 tags = ["100daysofcode", "react.js", "nodejs", "python",
         "devlife", "webdevelopment", "learnCode", "pythoncode"]
+print("Running")
 
 def dailyLikes():
   session = InstaPy(username=InstaUsername,
