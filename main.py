@@ -24,4 +24,4 @@ schedule.every().day.at("18:20").do(dailyLikes)
 
 while True:
   schedule.run_pending()
-  time.sleep(3600)
+  time.sleep(60)
