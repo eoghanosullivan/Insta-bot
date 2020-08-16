@@ -12,7 +12,6 @@ def dailyLikes():
   session = InstaPy(username=InstaUsername,
                     password=InstaPassword, headless_browser=True)
   with smart_run(session):
-    print("Starting Likes & Comments")
     session.set_relationship_bounds(enabled=True, max_followers=8500)
     session.set_do_comment(True, percentage=100)
     session.set_comments(["Love the post! ", "Fantastic", "🔥"])
@@ -21,7 +20,7 @@ def dailyLikes():
     print("Finished Linkes & Comments")
 
 
-schedule.every().day.at("18:15").do(dailyLikes)
+schedule.every().day.at("18:20").do(dailyLikes)
 
 while True:
   schedule.run_pending()
