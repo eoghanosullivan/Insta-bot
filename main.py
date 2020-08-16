@@ -20,7 +20,7 @@ def dailyLikes():
     print("Finished Linkes & Comments")
 
 
-schedule.every().day.at("18:30").do(dailyLikes)
+schedule.every().day.at("18:35").do(dailyLikes)
 
 while True:
   schedule.run_pending()
