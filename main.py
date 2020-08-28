@@ -13,14 +13,14 @@ def dailyLikes():
                     password=InstaPassword, headless_browser=True)
   with smart_run(session):
     session.set_relationship_bounds(enabled=True, max_followers=8500)
-    session.set_do_comment(True, percentage=100)
+    session.set_do_comment(True, percentage=25)
     session.set_comments(["Love the post! ", "Fantastic", "🔥"])
     session.set_do_follow(True, percentage=25)
     session.like_by_tags(tags, amount=1)
-    print("Finished Linkes & Comments")
+    print("Finished Likes & Comments")
 
 
-schedule.every().day.at("18:40").do(dailyLikes)
+schedule.every().day.at("11:30").do(dailyLikes)
 
 while True:
   schedule.run_pending()
